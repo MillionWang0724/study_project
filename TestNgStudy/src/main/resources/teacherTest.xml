@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="testTeacher">
+    <test name="runAll">
+        <classes>
+            <class name="suit.packages.GroupOnClass1"></class>
+            <class name="suit.packages.GroupOnClass2"></class>
+            <class name="suit.packages.GroupOnClass3"></class>
+        </classes>
+    </test>
+
+    <test name="onRunStu">
+        <groups>
+            <run>
+                <include name="stu1"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="suit.packages.GroupOnClass1"></class>
+            <class name="suit.packages.GroupOnClass2"></class>
+            <class name="suit.packages.GroupOnClass3"></class>
+        </classes>
+    </test>
+</suite>

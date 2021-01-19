@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="threadtest" parallel="class" thread-count="2">
+    <test name="demo1" >
+        <classes>
+            <class name="suit.multhread.MulThreadOnXml"></class>
+
+        </classes>
+    </test>
+
+    <test name="demo2" >
+        <classes>
+            <class name="BasicAnnotation"></class>
+
+        </classes>
+    </test>
+</suite>
