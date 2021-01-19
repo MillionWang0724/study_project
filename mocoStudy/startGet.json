@@ -1,0 +1,107 @@
+[
+  {
+    "description": "模拟一个没有参数额get请求",
+    "request": {
+      "uri": "/getDemo",
+      "method": "get"
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      },
+      "text": "一个没有参数的get请求!"
+    }
+  },
+  {
+    "description": "模拟一个带参数额get请求",
+    "request": {
+      "uri": "/getWithParam",
+      "method": "get",
+      "queries": {
+        "name": "wzh",
+        "age": "18"
+      }
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      },
+      "text": "我是大老王!"
+    }
+  },
+  {
+    "description": "模拟一个post请求",
+    "request": {
+      "uri": "/postDemo",
+      "method": "post"
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      },
+      "text": "一个的post请求!"
+    }
+  },
+  {
+    "description": "模拟一个post请求",
+    "request": {
+      "uri": "/postWithParam",
+      "method": "post",
+      "forms": {
+        "name": "wzh",
+        "age": "18"
+      }
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      },
+      "text": "post带着参数回来了"
+    }
+  },
+  {
+    "description": "这时一个带cookies的get请求",
+    "request": {
+      "uri": "/get/with/cookies",
+      "method": "get",
+      "cookies": {
+        "login": "true"
+      }
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      },
+      "text": "需要cookies才能用"
+    }
+  },
+  {
+    "description": "这时一个带cookies的post请求",
+    "request": {
+      "uri": "/post/with/cookies",
+      "method": "post",
+      "cookies": {
+        "login": "true"
+      },
+      "json": {
+        "name": "wzh",
+        "age": "18"
+      }
+    },
+    "response": {
+      "status": 200,
+      "json": {
+        "status": 1,
+        "aaa": "aaa！"
+      }
+    }
+  },
+  {
+    "description": "重定向到百度",
+    "request": {
+      "uri": "/redirect",
+      "method": "get"
+    },
+    "redirectTo": "http://localhost:8888/getDemo"
+  }
+]

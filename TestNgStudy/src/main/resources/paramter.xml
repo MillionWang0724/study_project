@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="paramter">
+    <test name="param">
+        <classes>
+            <class name="suit.paramter.ParamterTest"></class>
+            <parameter name="name" value="wzh"></parameter>
+            <parameter name="age" value="1231"></parameter>
+        </classes>
+    </test>
+</suite>
