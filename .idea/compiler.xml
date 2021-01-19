@@ -7,9 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="TestNgStudy" />
+        <module name="testNgReport" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="study_project" target="1.5" />
+      <module name="testNgReport" target="1.5" />
+      <module name="testNgreport" target="1.5" />
       <module name="TestNgStudy" target="1.5" />
     </bytecodeTargetLevel>
   </component>
